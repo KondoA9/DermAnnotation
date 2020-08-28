@@ -12,7 +12,7 @@ Developed by C++ / OpenSiv3D.
 
 | Platform        | Version        | Date       |Remarks         |
 |:---------------:|:---------------:|:-------------:|:-------------:|
-| Windows         | [**1.5.3**](https://github.com/KondoA9/DermAnnotation/raw/master/DermAnnotation_Setup.msi) |08/24/2020 |v1.4.0以前に編集した画像を開く際はoutputImagesからアノテーション済画像の入ったフォルダを開いてください。<br>v1.3.4以前のフォルダ履歴がリセットされます。|
+| Windows         | [**1.5.2**](https://github.com/KondoA9/DermAnnotation/raw/master/DermAnnotation_Setup.msi) |08/26/2020 ||
 
 動作にはGPU搭載マシンを前提としています。Windowsで動作が重い場合、設定->ディスプレイ->グラフィックの設定から本アプリケーションを高パフォーマンスとして設定すると改善される場合があります。
 
@@ -47,17 +47,14 @@ WindowsでNAS内のフォルダにアクセスする場合、エクスプロー�
 
 # Release notes
 
-### v1.5.3
-* ホームページを変更
+### v1.5.2
+* 編集可能なTIFF画像の種類を拡大
 
 <details>
   <summary>
     以前のバージョン
   </summary>
-
-  ### v1.5.2
-  * 編集可能なTIFF画像の種類を拡大
-
+ 
   ### v1.5.1
   * 自由選択による塗りつぶしについて、選択完了時に自動で塗りつぶしを行うように変更
   * 透明度を一括で変更する機能を追加
