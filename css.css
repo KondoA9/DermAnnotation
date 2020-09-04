@@ -3,13 +3,10 @@ html{
 }
 
 body {
+    font-family: "Segoe UI";
     margin: 0;
     background-color: rgb(245, 245, 245);
     height: 100%;
-}
-
-.mplus{
-    font-family: "M PLUS Rounded 1c";
 }
 
 header{
@@ -37,6 +34,7 @@ header{
 .wrapper{
     width: 100%;
     display: table;
+    min-height: 90vh;
 }
 
 #navigation{
@@ -51,9 +49,10 @@ header{
 }
 
 .nav_list{
+    font-family: "Yu Gothic";
     list-style-type: none;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
     margin-top: 2px;
     padding:0;
@@ -70,19 +69,26 @@ header{
 }
 
 #footer{
-    background-color: rgb(41, 26, 61);
+    background-color: rgb(26, 26, 26);
     color: rgb(255, 255, 255);
     margin: 0;
+    margin-top: 40px;
 }
 
-#footer_author{
-    font-size: 20px;
+.footer_text{
+    text-align: center;
+    font-size: 16px;
+}
+
+#mail_text{
+    color: rgb(255, 255, 255);
 }
 
 #title{
     border-bottom: solid;
     border-color: rgb(168, 97, 170);
     height: 60px;
+    margin-bottom: 20px;
 }
 
 #page_title{
