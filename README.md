@@ -1,1 +1,1 @@
-[**Home Page**](https://kondoa9.github.io/DermAnnotation/)
+[**DermAnnotation Web Site**](https://kondoa9.github.io/DermAnnotation/)
