@@ -41,10 +41,11 @@ header{
 }
 
 #navigation{
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 200px;
+    width: 150px;
     display:table-cell;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #main{
@@ -56,9 +57,15 @@ header{
     list-style-type: none;
     font-size: 22px;
     font-weight: bolder;
-    margin: 0;
-    margin-top: 8px;
     padding:0;
+    margin: 0;
+    margin-top: 18px;
+    padding-left: 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(119, 119, 255);
+    border-bottom-style: solid;
+    height: 22px;
+    line-height: 22px;
 }
 
 .nav_link{
@@ -69,6 +76,10 @@ header{
 .nav_link:hover{
     transition: 0.3s;
     color: rgb(60, 95, 211);
+}
+
+.nav_selected{
+    border-bottom-color: rgb(255, 156, 98);
 }
 
 #footer{
@@ -93,7 +104,7 @@ header{
 
 #title{
     border-bottom: solid;
-    border-color: rgb(168, 97, 170);
+    border-color: rgba(119, 119, 255);
     height: 50px;
     margin-bottom: 15px;
 }
@@ -104,7 +115,7 @@ header{
 
 .section{
     border-bottom: solid;
-    border-color: rgb(168, 97, 170);
+    border-color: rgba(119, 119, 255);
     height: 38px;
     margin-bottom: 10px;
 }
