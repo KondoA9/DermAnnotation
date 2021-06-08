@@ -56,7 +56,15 @@
             </div>
             <div class="main_text">
                 アプリケーションフォルダ内のdatas/setting/pen.iniを設定することでデフォルトのペンを設定することができます。<br>
-                [NAME]セクションnameキーにペンの名前をコンマ「,」区切りで記述します。セクション[COLOR_RGB]に、先程のペン名をキーとして、(R, G, B)形式で色を設定します。
+                [NAME]セクションnameキーにペンの名前をコンマ「,」区切りで記述します。セクション[COLOR_RGB]に、先程のペン名をキーとして、(R, G, B, 255)形式で色を設定します。R, G, Bは0~255の整数で、それぞれ赤、緑、青の濃さに対応します。<br>
+                <code>
+                <strong>例）</strong><br>
+                [NAME]<br>
+                name = Color1,Color2<br>
+                [COLOR_RGB]<br>
+                Color1 = (255, 0, 0, 255)<br>
+                Color2 = (0, 255, 0, 255)<br>
+                </code>
             </div>
 
             <div class="section">
