@@ -10,90 +10,119 @@
         gtag('js', new Date());
         gtag('config', 'G-ZTQZ7XFDZ4');
     </script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="../favicon.ico">
-    <title>DermAnnotation</title>
+    <link rel="canonical" href="https://kondoa9.github.io/DermAnnotation/manual/">
+    <title>Documentation for DermAnnotation</title>
 </head>
 
-
 <body>
-    <header>
-        <div id="header_title_group">
-            <img src="../favicon.ico" id="header_icon">
-            <p id="header_title">DermAnnotation</p>
-        </div>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="container-xxl flex-wrap flex-md-nowrap">
+            <a class="navbar-brand" href="../">
+                <img src="../favicon.ico" alt="" width="32" height="32" class="d-inline-block align-top">
+                DermAnnotation
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../download/">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./">Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div class="wrapper">
-        <ul id="navigation">
-            <li class="nav_list"><a href="../" class="nav_link">Top</a></li>
-            <li class="nav_list nav_selected"><a href="../Manual/" class="nav_link">Manual</a></li>
-            <li class="nav_list"><a href="../Issue/" class="nav_link">Issues</a></li>
-            <li class="nav_list"><a href="../Plan/" class="nav_link">Plan</a></li>
-            <li class="nav_list"><a href="../Question/" class="nav_link">Q&A</a></li>
-            <li class="nav_list"><a href="../Releases/" class="nav_link">Releases</a></li>
-            <li class="nav_list"><a href="../Contact/" class="nav_link">Contact</a></li>
-        </ul>
-
-        <div id="main">
-            <div id="title">
-                <p id="page_title">Manual</p>
+    <div class="container-fluid py-5">
+        <!--<div class="container py-4">
+            <h2>基本的な使い方</h2>
+            <div class="container">
+                アプリ起動後、「新規」ボタンから画像の入ったフォルダを選択します。<br>
+                開いたフォルダは「最近開いたフォルダ」として保存され、次回以降すぐに作業に取り掛かることができます。<br>
+                画像をアノテーションし保存すると、元画像とアノテーション済み画像が関連付けられ、次回以降は元画像を開いてもアノテーション済み画像が開かれます。<br>
             </div>
-
-            <div class="section">
-                <p class="section_title">画像を読み込む</p>
-            </div>
-            <div class="main_text">
+        </div>-->
+        
+        <div class="container py-4">
+            <h2>基本的な使い方</h2>
+            <div class="container">
                 フォルダ選択ダイアログで開きたい画像が入ったフォルダを選択します。<br>
                 編集画面右側のUIで、そのフォルダ内の画像を選択することが出来ます。<br>
                 開いているフォルダと同じ階層に、画像が入った別のフォルダある場合、そのフォルダに移動することが出来ます。<br>
-                使用可能な画像は、jpg, png, bmp, gif, ndpi, vms, vmu, svs, scn, tiff(DermAnnotation用のもの)です。<br>
             </div>
+        </div>
 
-            <div class="section">
-                <p class="section_title">デフォルトのペンを設定する</p>
+        <div class="container py-4">
+            <h2>使用可能な画像形式</h2>
+            <div class="container">
+                <ul>
+                    <li>jpg, png, bmp, gif 等の一般的な画像</li>
+                    <li>ndpi, vms, vmu, svs, scn 形式の病理画像</li>
+                    <li>DermAnnotationでアノテーション済みの画像</li>
+                </ul>
             </div>
-            <div class="main_text">
+        </div>
+
+        <div class="container py-4">
+            <h2>デフォルトのペンを設定する</h2>
+            <div class="container">
                 アプリケーションフォルダ内のdatas/setting/pen.iniを設定することでデフォルトのペンを設定することができます。<br>
-                [NAME]セクションnameキーにペンの名前をコンマ「,」区切りで記述します。セクション[COLOR_RGB]に、先程のペン名をキーとして、(R, G, B, 255)形式で色を設定します。R, G, Bは0~255の整数で、それぞれ赤、緑、青の濃さに対応します。<br>
+                [NAME]セクションnameキーにペンの名前をコンマ「,」区切りで記述します。セクション[COLOR_RGB]に、先程のペン名をキーとして、(R, G, B, 255)形式で色を設定します。R,
+                G, Bは0~255の整数で、それぞれ赤、緑、青の濃さに対応します。<br>
                 <code>
-                <strong>例）</strong><br>
-                [NAME]<br>
-                name = Color1,Color2<br>
-                [COLOR_RGB]<br>
-                Color1 = (255, 0, 0, 255)<br>
-                Color2 = (0, 255, 0, 255)<br>
-                </code>
+                    <strong>例）</strong><br>
+                    [NAME]<br>
+                    name = Color1,Color2<br>
+                    [COLOR_RGB]<br>
+                    Color1 = (255, 0, 0, 255)<br>
+                    Color2 = (0, 255, 0, 255)<br>
+                    </code>
             </div>
+        </div>
 
-            <div class="section">
-                <p class="section_title">ペンを追加/編集する</p>
-            </div>
-            <div class="main_text">
+        <div class="container py-4">
+            <h2>ペンを追加/編集する</h2>
+            <div class="container">
                 ペンを右クリックすると、そのペンの名前や色を変更したり、削除することが出来ます。<br>
                 ペン欄の一番下の「+」アイコンをクリックすると、新しくペンを追加することが出来ます。<br>
             </div>
+        </div>
 
-            <div class="section">
-                <p class="section_title">別のソフトウェアでDermAnnotation用TIFF画像を扱う</p>
-            </div>
-            <div class="main_text">
+        <div class="container py-4">
+            <h2>別のソフトウェアでDermAnnotation用TIFF画像を扱う</h2>
+            <div class="container">
                 DermAnnotationではTIFF画像にペン情報（名前、色）が保存されており、画像ごとに異なったペンを使用することが可能です。<br>
                 この情報はTIFFファイルの各ページの名前として、以下のように保存されています。<br>
-                1ページ目（オリジナル画像）の場合、original/NULL<br>
-                2ページ目以降（レイヤ画像）の場合、ペン名/(R, G, B, 255) (ペン名は任意の文字列、R, G, Bは0~255の整数)<br>
+                1ページ目（オリジナル画像）: 任意の名前<br>
+                2ページ目以降（レイヤ画像）: ペン名/(R, G, B, 255) (ペン名は任意の文字列、R, G, Bは0~255の整数)<br>
                 他ソフトウェアでは、ページ名を参照することでペン名、色の取得が、ページ名に書き込むことで新たなDermAnnotation用TIFFファイルを作成することができます。<br>
             </div>
         </div>
     </div>
     </div>
 
-    <div id="footer">
-        <div class="footer_text">
-            © 2020 <a id="my_github" href="https://github.com/KondoA9">Ekyu Kondo</a>
+    <footer class="py-4 bg-dark text-light text-center mt-5">
+        <div class="container">
+            <p>© 2021 <a class="text-light" href="https://github.com/KondoA9">Ekyu Kondo</a></p>
         </div>
-    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
