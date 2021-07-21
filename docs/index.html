@@ -18,8 +18,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="canonical" href="https://kondoa9.github.io/DermAnnotation/">
     <title>DermAnnotation - Annotator for semantic segmentation</title>
-    <meta name="description"
-        content="DermAnnotationはセマンティックセグメンテーション用の画像アノテーションツールです。様々な支援機能により効率的なアノテーション作業が可能になります。">
+    <meta name="description" content="DermAnnotationはセマンティックセグメンテーション用の画像アノテーションツールです。様々な支援機能により効率的なアノテーション作業が可能になります。">
 </head>
 
 <body>
@@ -53,14 +52,13 @@
     </header>
 
 
-    <div id="overview" class="container-fluid py-5 mb-5">
+    <div class="container-fluid py-5 mb-5" style="background: rgb(241, 226, 201);">
         <div class="container text-center">
             <h1 class="display-3 py-3">DermAnnotation</h1>
             <h3>セマンティック・セグメンテーション用の学習データ作成のためのアノテーションツール</h3>
             <div class="row justify-content-center">
                 <img class="col-xl-10 py-5" src="./overview.gif" width="100%">
             </div>
-            <p>*動画は現在開発中のバージョンです</p>
             <div class="container mx-auto">
                 <button class="btn btn-primary" onclick="location.href='./download'"
                     style="font-size: 1.25rem;">Download</button>
@@ -88,10 +86,11 @@
 
     <div class="container-fluid py-4 bg-white">
         <div class="container">
-            <h3>Layers</h3>
+            <h3>Lightweight</h3>
             <div class="row">
                 <div class="">
-                    <p>各ペンはそれぞれのレイヤに対して書き込みます。そのため、複数の要素が重なっている場合でも適切にアノテーションすることが可能です。</p>
+                    <p>DermAnnotationは、縦横最大16824pxの画像を編集することが出来ます。このような巨大な画像であってもスムーズに編集を行えるように最適化を施しているため、高解像度の学習データが必要な場合でも効率的なアノテーションが可能です。
+                    </p>
                 </div>
             </div>
         </div>
@@ -99,10 +98,22 @@
 
     <div class="container-fluid py-4 bg-white">
         <div class="container">
+            <h3>Layers</h3>
+            <div class="row">
+                <div class="">
+                    <p>各ペンはそれぞれ独自のレイヤに対して書き込みを行います。複数の要素が重なっている場合でも適切にアノテーションすることが可能です。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid py-4 bg-white">
+        <div class="container">
             <h3>Virtual slide</h3>
             <div class="row">
                 <div class="">
-                    <p>DermAnnotationは様々な形式の病理画像に対応しています。高解像度の画像でもストレス無く作業ができるように最適化を施しているため、スムーズなアノテーションが可能です。</p>
+                    <p>DermAnnotationは様々な形式の病理画像に対応しています。病理画像をjpegやpngに変換すること無く、そのままの状態で編集することが可能です。<a
+                            href="./manual/#vitrual-slide">*</a></p>
                 </div>
             </div>
         </div>
