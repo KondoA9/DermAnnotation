@@ -49,129 +49,59 @@
         </nav>
     </header>
 
-    <div class="container-fluid py-5 text-center bg-dark text-white">
-        <div class="container py-2">
-            <h2 class="pt-3">Stable Version: 1.6.4</h2>
-            <p>Updated 2021/05/19</p>
-            <div class="py-3">
-                <h5>Windows</h5>
-                <button class="btn btn-primary" onclick="location.href='../AppData/DermAnnotation_Setup.msi'">Installer
-                    version</button>
-                <button class="btn btn-primary" onclick="location.href='../AppData/DermAnnotation.zip'">Portable
-                    version (zip)</button>
-            </div>
-            <div class="container py-3" style="text-align: left;">
-                <ul class="py-2">
-                    <h5>最新リリースの変更点</h5>
-                    <li>バーチャルスライド画像 (.svs, .scn) に対応</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="container-fluid py-5 text-center bg-light my-auto" style="min-height: 90vh;">
+        <h2 class="display-5 pt-3">Download DermAnnotation v2.0.4</h2>
+        <p class="my-3">Updated on 2021/07/21</p>
+        <div class="container" style="display: table;">
+            <div class="align-middle" style="display: table-cell;">
+                <div>
+                    <button class="btn btn-primary py-3 px-5 m-3"
+                        onclick="location.href='../app/DermAnnotationSetup_Windows.msi'">
+                        <p class="lead m-0">Windows</p>
+                        <p class="m-0">10 / 11 (64bit)</p>
+                    </button>
+                    <button class="btn btn-primary py-3 px-5 m-3"
+                        onclick="location.href='../app/DermAnnotationSetup_macOS.zip'">
+                        <p class="lead m-0">macOS</p>
+                        <p class="m-0">Mojave 10.14+</p>
+                    </button>
+                </div>
 
-    <div class="container-fluid py-5 text-center bg-light">
-        <div class="container py-2">
-            <h2 class="pt-3">Beta Version: 2.0.3</h2>
-            <p>Updated 2021/07/20</p>
-            <div class="py-3">
-                <button class="btn btn-primary" onclick="location.href='../app/DermAnnotationSetup_Windows.msi'">
-                    <p class="m-0">Windows</p><small>10 / 11 (64bit)</small>
-                </button>
-                <button class="btn btn-primary" onclick="location.href='../app/DermAnnotationSetup_macOS.zip'">
-                    <p class="m-0">macOS</p><small>Mojave 10.14+</small>
-                </button>
-            </div>
-            <p>*macOSの場合、起動時に警告が表示されます。Finderからcontrolキーを押下しながら右クリックし、「開く」を選択することで正常に起動でき、以降はこの操作をしなくても起動可能になります。</p>
-            <p>新しいバージョンがある場合、インターネットに接続していると更新通知が表示されます。プロキシ自動設定(pac)には対応していません。</p>
-            <div class="container py-3" style="text-align: left;">
-                <h5 class="text-danger">ベータバージョンには主に以下の変更点があり、動作が不安定な場合があります。</h5>
-                <ul class="py-2">
-                    <li class="text-danger">明るさ変更機能を削除</li>
-                    <li class="text-danger">近似色塗りつぶし機能を削除</li>
-                    <li class="text-danger">デフォルトペン設定を削除</li>
-                    <li>macOSに対応</li>
-                    <li>ライト / ダークモードに対応、任意の解像度に対応、全体的にUIを刷新</li>
-                    <li>ペン設定のインポート・エクスポート機能を追加</li>
-                    <li>開いた画像にペン設定が存在しない場合、直前に編集していたペン設定を引き継ぐように</li>
-                    <li>アノテーション済み画像の保存先を設定可能に</li>
-                    <li>高解像度画像編集時にトリミングが可能に</li>
-                    <li>ペイント時の負荷を大幅に低減、高解像度画像の編集がよりスムーズに</li>
-                    <li>高解像度画像編集時、アプリケーションの動作がより安定に</li>
-                </ul>
-                <h5>最新リリースの変更点</h5>
-                <ul class="py-2">
-                    <li>ペンの設定を保存時、設定の名称を入力してもエラーとなる問題を修正</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                <p class="my-3">
+                    *macOSの場合、起動時に警告が表示されます。Finderからcontrolキーを押下しながら右クリックし、「開く」を選択することで正常に起動でき、以降はこの操作をしなくても起動可能になります。
+                </p>
 
-    <div class="container py-5">
-        <h3>過去の更新</h3>
-        <div class="container">
-            <div class="container">
-                <h5>v1.6.3</h5>
-                <ul>
-                    <li>ウィンドウリサイズ時に、アプリケーションの解像度がウィンドウサイズに追従するように変更<br>
-                        これにより常に最高画質が維持され、アスペクト比による制限が解消されました</li>
-                    <li>アップデート通知の表示方式を変更</li>
-                    <li>アプリケーション終了時のウィンドウサイズをデフォルトのウィンドウサイズとして保存するように変更</li>
-                    <li>一部処理の軽量化</li>
-                </ul>
-            </div>
+                <div class="container py-3" style="text-align: left;">
+                    <h5 class="text-danger">バージョン1.x.xから2.x.xへのバージョンに伴い、主に以下の変更点があります。</h5>
+                    <ul class="my-4">
+                        <li class="text-danger">明るさ変更機能を削除</li>
+                        <li class="text-danger">近似色塗りつぶし機能を削除</li>
+                        <li class="text-danger">デフォルトペン設定を削除</li>
+                        <li class="text-primary">macOSに対応</li>
+                        <li class="text-primary">ペン設定のインポート・エクスポート機能を追加</li>
+                        <li class="text-primary">アノテーション済み画像の保存先を設定可能に</li>
+                        <li>拡大 / 縮小の挙動を改善</li>
+                        <li>開いた画像にペン設定が存在しない場合、直前に編集していたペン設定を引き継ぐように機能改善</li>
+                        <li>ライト / ダークモードに対応、任意の解像度に対応、全体的にUIを刷新</li>
+                        <li>高解像度画像編集時にトリミングをする機能を追加</li>
+                        <li>ペイント時の負荷を大幅に低減、高解像度画像の編集がよりスムーズになるように機能改善</li>
+                        <li>高解像度画像編集時、アプリケーションの動作がより安定になるように機能改善</li>
+                        <li>自動的にバージョンチェック・ダウンロード・バージョンアップが可能に(Windowsの場合警告が表示されるため、手動で警告の対応をする必要があります。)</li>
+                        <li>バージョンチェックの際、プロキシ環境下でも更新が可能に</li>
+                    </ul>
 
-            <div class="container">
-                <h5>v1.6.2</h5>
-                <ul>
-                    <li>アプリケーション内で一部設定を変更する機能を追加</li>
-                    <li>設定された画面サイズがディスプレイに収まらない、または16:9でない場合、自動的にディスプレイサイズにリサイズするように変更</li>
-                    <li>ペンの数の上限を11個に制限</li>
-                    <li>特定環境下で一部ユーザーインターフェースがずれる問題を修正</li>
-                    <li>一部ユーザーインターフェースの表示を改善</li>
-                    <li>ペンで塗る際の処理負荷を低減</li>
-                </ul>
-            </div>
+                    <h5 class="pt-4">最新リリースの変更点</h5>
+                    <ul class="py-2">
+                        <li>新しいバージョンがある場合、インストーラーを自動的にダウンロードし、アプリケーション終了後にインストーラーが起動されるようになりました。この機能は設定で有効化 / 無効化が可能です。
+                        </li>
+                    </ul>
 
-            <div class="container">
-                <h5>v1.6.1</h5>
-                <ul>
-                    <li>バーチャルスライド画像(.ndpi, .vms, .vmu)に対応</li>
-                    <li>初起動時に設定ファイルが生成されない問題を修正</li>
-                    <li>画像を開いた際にクラッシュする場合がある問題を修正</li>
-                </ul>
-            </div>
-
-            <div class="container">
-                <h5>v1.6.0</h5>
-                <ul>
-                    <li>ペンを編集/追加/削除する機能を追加(Manual参照)</li>
-                    <li>画像毎にペン設定を保存するように変更(pen.ini内のペン設定は、画像にペン情報がない場合のデフォルトのペンとして設定されます)</li>
-                </ul>
-            </div>
-
-            <div class="container">
-                <h5>v1.5.2</h5>
-                <ul>
-                    <li>編集可能なTIFF画像の種類を拡大</li>
-                </ul>
-            </div>
-
-            <div class="container">
-                <h5>v1.5.1</h5>
-                <ul>
-                    <li>自由選択による塗りつぶしについて、選択完了時に自動で塗りつぶしを行うように変更</li>
-                    <li>透明度を一括で変更する機能を追加</li>
-                    <li>最近開いたフォルダの表示数制限を撤廃</li>
-                    <li>その他不具合等の修正</li>
-                </ul>
-            </div>
-
-            <div class="container">
-                <h5>v1.5.0</h5>
-                <ul>
-                    <li>ユーザーインターフェースの改善</li>
-                    <li>一部の処理を軽量化</li>
-                </ul>
+                    <h5 class="pt-4">既知の不具合</h5>
+                    <ul class="py-2">
+                        <li>保存不可能なフォルダを出力先フォルダとして指定すると、アプリケーションがフリーズする場合がある</li>
+                        <li>ペンを追加した後、保存せずにそのままペンの編集をし、その後保存をするとアプリケーションが強制終了する</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

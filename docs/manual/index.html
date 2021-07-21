@@ -49,72 +49,46 @@
         </nav>
     </header>
 
-    <div class="container-fluid py-5">
-        <!--<div class="container py-4">
-            <h2>基本的な使い方</h2>
-            <div class="container">
-                アプリ起動後、「新規」ボタンから画像の入ったフォルダを選択します。<br>
-                開いたフォルダは「最近開いたフォルダ」として保存され、次回以降すぐに作業に取り掛かることができます。<br>
-                画像をアノテーションし保存すると、元画像とアノテーション済み画像が関連付けられ、次回以降は元画像を開いてもアノテーション済み画像が開かれます。<br>
-            </div>
-        </div>-->
-        
+    <div class="container-fluid py-5" style="min-height: 90vh;">
         <div class="container py-4">
-            <h2>基本的な使い方</h2>
+            <h2 id="basic-usage">基本的な使い方</h2>
             <div class="container">
-                フォルダ選択ダイアログで開きたい画像が入ったフォルダを選択します。<br>
-                編集画面右側のUIで、そのフォルダ内の画像を選択することが出来ます。<br>
-                開いているフォルダと同じ階層に、画像が入った別のフォルダある場合、そのフォルダに移動することが出来ます。<br>
+                アプリ起動後、「新規」から画像の入ったフォルダを選択します。<br>
+                開いたフォルダは「最近開いたフォルダ」として保存され、次回以降すぐに作業に取り掛かることができます。<br>
             </div>
         </div>
 
         <div class="container py-4">
-            <h2>使用可能な画像形式</h2>
+            <h2 id="available-images">使用可能な画像形式</h2>
             <div class="container">
                 <ul>
                     <li>jpg, png, bmp, gif 等の一般的な画像</li>
                     <li>ndpi, vms, vmu, svs, scn 形式の病理画像</li>
                     <li>DermAnnotationでアノテーション済みの画像</li>
+                    <li><a href="../dev/">DermAnnotation用ファイル形式</a>に沿ったTIFFファイル</li>
+                    <li>縦横それぞれ16384px以下の画像（macOSの場合は8192px）</li>
                 </ul>
             </div>
         </div>
 
         <div class="container py-4">
-            <h2>デフォルトのペンを設定する</h2>
+            <h2 id="pencil-setting">ペンの設定</h2>
             <div class="container">
-                アプリケーションフォルダ内のdatas/setting/pen.iniを設定することでデフォルトのペンを設定することができます。<br>
-                [NAME]セクションnameキーにペンの名前をコンマ「,」区切りで記述します。セクション[COLOR_RGB]に、先程のペン名をキーとして、(R, G, B, 255)形式で色を設定します。R,
-                G, Bは0~255の整数で、それぞれ赤、緑、青の濃さに対応します。<br>
-                <code>
-                    <strong>例）</strong><br>
-                    [NAME]<br>
-                    name = Color1,Color2<br>
-                    [COLOR_RGB]<br>
-                    Color1 = (255, 0, 0, 255)<br>
-                    Color2 = (0, 255, 0, 255)<br>
-                    </code>
+                編集画面上のメニューバー→Pencilから、ペンの設定ができます。<br>
+                ペン設定は画像毎に記憶されており、今開いている画像が持つペン設定を保存することができ、保存したペン設定は別の画像を開いた際に呼び出すことが出来ます。<br>
+                ペン設定はファイルとしてエクスポートすることができます。エクスポートしたファイルは別のDermAnnotationでインポートし、そのペン設定を自由に使うことが出来ます。<br>
+                複数人で同じペン設定を共有する際は、1人がペンの設定をし、エクスポートしたファイルを配布・インポートすることで素早く作業に取り掛かることが可能です。<br>
             </div>
         </div>
 
         <div class="container py-4">
-            <h2>ペンを追加/編集する</h2>
+            <h2 id="virtual-slide">病理画像</h2>
             <div class="container">
-                ペンを右クリックすると、そのペンの名前や色を変更したり、削除することが出来ます。<br>
-                ペン欄の一番下の「+」アイコンをクリックすると、新しくペンを追加することが出来ます。<br>
+                DermAnnotationは病理画像に対応していますが、完全に対応はしきれておらず、病理画像の読み込みは以下の仕様に従います。<br>
+                <strong>病理画像のファイル内にある最も上位にあるレイヤーから順番に縦横16384px以下に該当するレイヤーを探し、最初に見つけたレイヤーただ1つを読み込む。</strong><br>
+                そのため、解像度が著しく低下したり、目的の画像が読み込めない場合があります。<br>
             </div>
         </div>
-
-        <div class="container py-4">
-            <h2>別のソフトウェアでDermAnnotation用TIFF画像を扱う</h2>
-            <div class="container">
-                DermAnnotationではTIFF画像にペン情報（名前、色）が保存されており、画像ごとに異なったペンを使用することが可能です。<br>
-                この情報はTIFFファイルの各ページの名前として、以下のように保存されています。<br>
-                1ページ目（オリジナル画像）: 任意の名前<br>
-                2ページ目以降（レイヤ画像）: ペン名/(R, G, B, 255) (ペン名は任意の文字列、R, G, Bは0~255の整数)<br>
-                他ソフトウェアでは、ページ名を参照することでペン名、色の取得が、ページ名に書き込むことで新たなDermAnnotation用TIFFファイルを作成することができます。<br>
-            </div>
-        </div>
-    </div>
     </div>
 
     <footer class="py-4 bg-dark text-light text-center mt-5">
