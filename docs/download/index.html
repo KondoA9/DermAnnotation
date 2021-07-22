@@ -3,12 +3,13 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTQZ7XFDZ4"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-712HVZXFDS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-ZTQZ7XFDZ4');
+
+        gtag('config', 'G-712HVZXFDS');
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,16 +56,16 @@
         <div class="container" style="display: table;">
             <div class="align-middle" style="display: table-cell;">
                 <div>
-                    <button class="btn btn-primary py-3 px-5 m-3"
-                        onclick="location.href='../app/DermAnnotationSetup_Windows.msi'">
+                    <a class="btn btn-primary py-3 px-5 m-3" href="../app/DermAnnotationSetup_Windows.msi"
+                        onclick="gtag('event', 'download', {'event_category': 'installer', 'event_label': 'windows'})">
                         <p class="lead m-0">Windows</p>
                         <p class="m-0">10 / 11 (64bit)</p>
-                    </button>
-                    <button class="btn btn-primary py-3 px-5 m-3"
-                        onclick="location.href='../app/DermAnnotationSetup_macOS.zip'">
+                    </a>
+                    <a class="btn btn-primary py-3 px-5 m-3" href="../app/DermAnnotationSetup_macOS.zip"
+                        onclick="gtag('event', 'download', {'event_category': 'installer', 'event_label': 'macOS'})">
                         <p class="lead m-0">macOS</p>
                         <p class="m-0">Mojave 10.14+</p>
-                    </button>
+                    </a>
                 </div>
 
                 <p class="my-3">
@@ -104,6 +105,7 @@
                     <ul class="py-2">
                         <li>保存不可能なフォルダを出力先フォルダとして指定すると、アプリケーションがフリーズする場合がある</li>
                         <li>ペンを追加した後、保存せずにそのままペンの編集をし、その後保存をするとアプリケーションが強制終了する</li>
+                        <li>通知UIが途中で途切れる場合がある</li>
                     </ul>
                 </div>
             </div>
