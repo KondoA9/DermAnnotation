@@ -51,17 +51,17 @@
     </header>
 
     <div class="container-fluid py-5 text-center bg-light my-auto" style="min-height: 90vh;">
-        <h2 class="display-5 pt-3">Download DermAnnotation v2.0.7</h2>
-        <p class="my-3">Updated on 2021/08/11</p>
+        <h2 class="display-5 pt-3">Download DermAnnotation v2.0.8</h2>
+        <p class="my-3">Updated on 2021/08/19</p>
         <div class="container" style="display: table;">
             <div class="align-middle" style="display: table-cell;">
                 <div>
-                    <a class="btn btn-primary py-3 px-5 m-3" href="../app/DermAnnotationSetup_Windows.msi"
+                    <a class="btn btn-primary py-3 px-5 m-3" href="../publish/installer/DermAnnotationSetup_Windows.msi"
                         onclick="gtag('event', 'download', {'event_category': 'installer', 'event_label': 'windows'})">
                         <p class="lead m-0">Windows (64bit)</p>
                         <p class="m-0">10 ver1803+ / 11</p>
                     </a>
-                    <a class="btn btn-primary py-3 px-5 m-3" href="../app/DermAnnotationSetup_macOS.zip"
+                    <a class="btn btn-primary py-3 px-5 m-3" href="../publish/installer/DermAnnotationSetup_macOS.zip"
                         onclick="gtag('event', 'download', {'event_category': 'installer', 'event_label': 'macOS'})">
                         <p class="lead m-0">macOS</p>
                         <p class="m-0">Mojave 10.14+</p>
@@ -97,15 +97,16 @@
 
                     <h5 class="pt-4">最新リリースの変更点</h5>
                     <ul class="py-2">
-                        <li>操作パネルのレイアウトを改善</li>
-                        <li>戻る / 進むができなくなる場合がある問題を修正</li>
-                        <li>ペンが複数選択されたように表示されてしまう問題を修正</li>
+                        <li>任意のタイミングで画像をトリミングする機能を実装</li>
+                        <li>画像保存時に自動的にバックアップを保存し、その保存処理が失敗した場合でもすべての作業内容が消去されないように機能改善</li>
+                        <li>アプリ終了時の動作を安定化</li>
+                        <li>いくつかのUIのデザインを改善</li>
+                        <li>設定変更後、メニュー画面に戻らずにアプリを終了すると設定が保存されない問題を修正</li>
+                        <li>特定のWindows環境で自動更新が失敗する問題を修正</li>
                     </ul>
 
                     <h5 class="pt-4">既知の不具合</h5>
                     <ul class="py-2">
-                        <li>設定変更後、メニュー画面に戻らずにアプリを終了すると設定が保存されない</li>
-                        <li>特定のWindows環境で自動更新が失敗する</li>
                     </ul>
                 </div>
             </div>
