@@ -52,6 +52,8 @@ const config: NuxtConfig = {
       { code: "ja", iso: "ja_JP", name: "日本語" },
       { code: "en", iso: "en-US", name: "English" },
     ],
+    defaultLocale: "en",
+    strategy: "prefix",
     detectBrowserLanguage: {
       useCookie: true,
       redirectOn: "root",
@@ -60,7 +62,6 @@ const config: NuxtConfig = {
       fallbackLocale: "en",
       messages: messages as any,
     },
-    strategy: "prefix_and_default",
   },
 
   "google-gtag": {
