@@ -2,7 +2,6 @@
   "name": "DermAnnotation-homapage",
   "version": "1.0.0",
   "private": true,
-  "license": "UNLICENSED",
   "scripts": {
     "dev": "nuxt",
     "start": "nuxt start",
