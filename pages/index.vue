@@ -18,7 +18,7 @@
           playsinline
           class="py-5"
           width="100%"
-          src="@/assets/overview.mp4"
+          :src="`${$router.options.base}overview.mp4`"
           type="video/mp4"
         />
         <div class="mx-auto">
