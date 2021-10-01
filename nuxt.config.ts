@@ -37,9 +37,14 @@ const config: NuxtConfig = {
     },
   ],
 
-  buildModules: ["@nuxt/typescript-build"],
+  buildModules: ["@nuxt/typescript-build", "nuxt-compress"],
 
-  modules: ["bootstrap-vue/nuxt", "@nuxtjs/i18n", "@nuxtjs/google-gtag"],
+  modules: [
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/i18n",
+    "@nuxtjs/google-gtag",
+    "nuxt-compress",
+  ],
 
   build: {
     babel: {
@@ -72,6 +77,15 @@ const config: NuxtConfig = {
     },
     debug: true,
     disableAutoPageTrack: false,
+  },
+
+  "nuxt-compress": {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
   },
 }
 
