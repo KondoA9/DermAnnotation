@@ -30,6 +30,12 @@ const config: NuxtConfig = {
     trailingSlash: true,
   },
 
+  render: {
+    static: {
+      maxAge: 1000 * 60 * 60 * 24 * 7,
+    },
+  },
+
   components: [
     {
       path: "@/components/",
