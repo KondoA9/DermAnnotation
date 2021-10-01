@@ -12,10 +12,16 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Setup Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        run:  yarn
+
       - name: Generate
-        run: |
-          yarn
-          yarn generate
+        run:  yarn generate
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
