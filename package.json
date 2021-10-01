@@ -17,9 +17,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7",
-    "sass": "^1.42.1",
-    "sass-loader": "^10.1.1"
+    "nuxt": "^2.15.7"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
@@ -33,6 +31,8 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
     "nuxt-compress": "^5.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.1.1"
   }
 }
