@@ -11,7 +11,16 @@
         <h3 class="lead">
           {{ $t("topPage.summary") }}
         </h3>
-        <img class="py-5" src="@/assets/overview.gif" width="100%" />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="py-5"
+          width="100%"
+          src="@/assets/overview.mp4"
+          type="video/mp4"
+        />
         <div class="mx-auto">
           <nuxt-link :to="localePath('/download')">
             <button class="btn btn-primary" style="font-size: 1.25rem">
