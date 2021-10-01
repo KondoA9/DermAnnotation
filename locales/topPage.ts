@@ -2,7 +2,6 @@ export default {
   en: {
     topPage: {
       summary: "A powerful annotation tool for semantic segmentation",
-      note: "DermAnnotation currently available only for japanese. English version and some documentations are under construction.",
       advantages: [
         {
           summary:

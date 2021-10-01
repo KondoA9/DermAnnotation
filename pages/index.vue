@@ -27,7 +27,10 @@
               Download
             </button>
           </nuxt-link>
-          <p class="mt-3">{{ $t("topPage.note") }}</p>
+          <p class="mt-3">
+            DermAnnotation currently available only for japanese. English
+            version and some documentations are under construction.
+          </p>
         </div>
       </div>
     </div>
