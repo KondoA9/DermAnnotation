@@ -2,24 +2,23 @@
   <div>
     <Header />
 
-    <div
-      class="container-fluid py-4 mb-5"
-      style="background: rgb(241, 226, 201)"
-    >
-      <div class="container text-center">
-        <h1 class="py-3 font-weight-normal">DermAnnotation</h1>
-        <h3 class="lead">
-          {{ $t("topPage.summary") }}
-        </h3>
+    <div class="text-center py-4 mb-5" style="background: rgb(241, 226, 201)">
+      <div class="container">
+        <div class="py-3">
+          <h1 class="font-weight-normal">DermAnnotation</h1>
+          <p class="lead">
+            {{ $t("topPage.summary") }}
+          </p>
+        </div>
         <video
+          class="pb-4"
           autoplay
           loop
           muted
           playsinline
-          class="py-5"
+          type="video/mp4"
           width="100%"
           :src="`${$router.options.base}overview.mp4`"
-          type="video/mp4"
         />
         <div class="mx-auto">
           <nuxt-link :to="localePath('/download')">

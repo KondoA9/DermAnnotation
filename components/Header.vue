@@ -11,6 +11,7 @@
         ><img
           class="align-middle"
           :src="`${$router.options.base}favicon.ico`"
+          alt="DermAnnotation"
           width="32"
           height="32"
         />

@@ -45,7 +45,7 @@ const manualPage: Page = {
 
 const devPage: Page = {
   en: {
-    title: "Documentation for developers",
+    title: "For developers",
     description: "Documentation of DermAnnotation for developers",
   },
   ja: {
