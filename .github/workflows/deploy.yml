@@ -34,6 +34,7 @@ jobs:
 
   deploy:
     if: ${{ github.event_name == 'push' }}
+    needs: generate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
