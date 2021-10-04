@@ -30,6 +30,12 @@ const config: NuxtConfig = {
     trailingSlash: true,
   },
 
+  render: {
+    static: {
+      maxAge: 1000 * 60 * 60 * 24 * 7,
+    },
+  },
+
   components: [
     {
       path: "@/components/",
@@ -37,9 +43,14 @@ const config: NuxtConfig = {
     },
   ],
 
-  buildModules: ["@nuxt/typescript-build"],
+  buildModules: ["@nuxt/typescript-build", "nuxt-compress"],
 
-  modules: ["bootstrap-vue/nuxt", "@nuxtjs/i18n", "@nuxtjs/google-gtag"],
+  modules: [
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/i18n",
+    "@nuxtjs/google-gtag",
+    "nuxt-compress",
+  ],
 
   build: {
     babel: {
@@ -52,6 +63,8 @@ const config: NuxtConfig = {
       { code: "ja", iso: "ja_JP", name: "日本語" },
       { code: "en", iso: "en-US", name: "English" },
     ],
+    defaultLocale: "en",
+    strategy: "prefix",
     detectBrowserLanguage: {
       useCookie: true,
       redirectOn: "root",
@@ -60,7 +73,6 @@ const config: NuxtConfig = {
       fallbackLocale: "en",
       messages: messages as any,
     },
-    strategy: "prefix_and_default",
   },
 
   "google-gtag": {
@@ -71,6 +83,15 @@ const config: NuxtConfig = {
     },
     debug: true,
     disableAutoPageTrack: false,
+  },
+
+  "nuxt-compress": {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
   },
 }
 

@@ -2,23 +2,34 @@
   <div>
     <Header />
 
-    <div
-      class="container-fluid py-4 mb-5"
-      style="background: rgb(241, 226, 201)"
-    >
-      <div class="container text-center">
-        <h1 class="py-3 font-weight-normal">DermAnnotation</h1>
-        <h3 class="lead">
-          {{ $t("topPage.summary") }}
-        </h3>
-        <img class="py-5" src="@/assets/overview.gif" width="100%" />
+    <div class="text-center py-4 mb-5" style="background: rgb(241, 226, 201)">
+      <div class="container">
+        <div class="py-3">
+          <h1 class="font-weight-normal">DermAnnotation</h1>
+          <p class="lead">
+            {{ $t("topPage.summary") }}
+          </p>
+        </div>
+        <video
+          class="pb-4"
+          autoplay
+          loop
+          muted
+          playsinline
+          type="video/mp4"
+          width="100%"
+          :src="`${$router.options.base}overview.mp4`"
+        />
         <div class="mx-auto">
           <nuxt-link :to="localePath('/download')">
             <button class="btn btn-primary" style="font-size: 1.25rem">
               Download
             </button>
           </nuxt-link>
-          <p class="mt-3">{{ $t("topPage.note") }}</p>
+          <p class="mt-3">
+            DermAnnotation currently available only for japanese. English
+            version and some documentations are under construction.
+          </p>
         </div>
       </div>
     </div>
