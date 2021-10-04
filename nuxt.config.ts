@@ -50,6 +50,7 @@ const config: NuxtConfig = {
     "@nuxtjs/i18n",
     "@nuxtjs/google-gtag",
     "nuxt-compress",
+    "@nuxtjs/sitemap",
   ],
 
   build: {
@@ -63,8 +64,8 @@ const config: NuxtConfig = {
       { code: "ja", iso: "ja_JP", name: "日本語" },
       { code: "en", iso: "en-US", name: "English" },
     ],
-    defaultLocale: "en",
-    strategy: "prefix",
+    defaultLocale: "ja",
+    strategy: "prefix_except_default",
     detectBrowserLanguage: {
       useCookie: true,
       redirectOn: "root",
@@ -91,6 +92,15 @@ const config: NuxtConfig = {
     },
     brotli: {
       threshold: 8192,
+    },
+  },
+
+  sitemap: {
+    hostname: "https://kondoa9.github.io/",
+    gzip: true,
+    i18n: true,
+    defaults: {
+      lastmod: new Date(),
     },
   },
 }
