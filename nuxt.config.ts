@@ -1,5 +1,5 @@
 import { NuxtConfig } from "@nuxt/types"
-import messages from "./locales"
+import i18nConfig from "./nuxt.i18n.config"
 import env from "./env"
 
 const config: NuxtConfig = {
@@ -30,12 +30,6 @@ const config: NuxtConfig = {
     trailingSlash: true,
   },
 
-  render: {
-    static: {
-      maxAge: 1000 * 60 * 60 * 24 * 7,
-    },
-  },
-
   components: [
     {
       path: "@/components/",
@@ -59,22 +53,7 @@ const config: NuxtConfig = {
     },
   },
 
-  i18n: {
-    locales: [
-      { code: "ja", iso: "ja_JP", name: "日本語" },
-      { code: "en", iso: "en-US", name: "English" },
-    ],
-    defaultLocale: "ja",
-    strategy: "prefix_except_default",
-    detectBrowserLanguage: {
-      useCookie: true,
-      redirectOn: "root",
-    },
-    vueI18n: {
-      fallbackLocale: "en",
-      messages: messages as any,
-    },
-  },
+  i18n: i18nConfig,
 
   "google-gtag": {
     id: "G-712HVZXFDS",
@@ -98,7 +77,7 @@ const config: NuxtConfig = {
   sitemap: {
     hostname: "https://kondoa9.github.io/",
     gzip: true,
-    i18n: true,
+    i18n: i18nConfig,
     defaults: {
       lastmod: new Date(),
     },
