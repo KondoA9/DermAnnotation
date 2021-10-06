@@ -15,8 +15,9 @@ export default {
         "Fixed an issue where automatic updates would fail in certain Windows environments",
       ],
       bugs: [
-        "App will crash when imported pencil settings with json of different format.",
-        "Icons are not displayed on some windows environments.",
+        "App will crash when imported pencil settings with json of different format",
+        "Icons are not displayed on some windows environments",
+        "Notifications may be interrupted and invisible",
       ],
     },
   },
@@ -36,8 +37,9 @@ export default {
         "特定のWindows環境で自動更新が失敗する問題を修正",
       ],
       bugs: [
-        "ペン設定のインポート時、異なるフォーマットのJSONファイルを読み込むとアプリケーションが強制終了する。",
-        "特定のWindows環境でアイコンが表示されない場合がある。",
+        "ペン設定のインポート時、異なるフォーマットのJSONファイルを読み込むとアプリケーションが強制終了する",
+        "特定のWindows環境でアイコンが表示されない場合がある",
+        "通知が途中手途切れて見えない場合がある",
       ],
     },
   },
