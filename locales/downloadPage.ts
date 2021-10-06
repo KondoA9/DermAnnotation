@@ -14,7 +14,10 @@ export default {
         "Fixed the problem that the setting is not saved when the application is closed without returning to the menu screen after changing the setting",
         "Fixed an issue where automatic updates would fail in certain Windows environments",
       ],
-      bugs: [],
+      bugs: [
+        "App will crash when imported pencil settings with json of different format.",
+        "Icons are not displayed on some windows environments.",
+      ],
     },
   },
   ja: {
@@ -32,7 +35,10 @@ export default {
         "設定変更後、メニュー画面に戻らずにアプリを終了すると設定が保存されない問題を修正",
         "特定のWindows環境で自動更新が失敗する問題を修正",
       ],
-      bugs: [],
+      bugs: [
+        "ペン設定のインポート時、異なるフォーマットのJSONファイルを読み込むとアプリケーションが強制終了する。",
+        "特定のWindows環境でアイコンが表示されない場合がある。",
+      ],
     },
   },
 }
