@@ -3,7 +3,7 @@
     <b-navbar
       id="navbar"
       class="shadow-sm"
-      toggleable="lg"
+      toggleable="xl"
       type="dark"
       variant="dark"
     >
