@@ -25,7 +25,7 @@ const config: NuxtConfig = {
     ],
   },
 
-  css: [],
+  css: ["~/assets/global.scss"],
 
   plugins: [],
 
