@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <CustomHeader />
-
+  <PageTemplate>
     <div class="container-fluid py-5">
       <div class="container my-4">
         <div class="text-center">
@@ -64,9 +62,7 @@
         </form>
       </div>
     </div>
-
-    <CustomFooter />
-  </div>
+  </PageTemplate>
 </template>
 
 <script lang="ts">

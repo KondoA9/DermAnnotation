@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <CustomHeader />
-
+  <PageTemplate>
     <div class="text-center py-4 mb-5" style="background: rgb(241, 226, 201)">
       <div class="container">
         <div class="py-3">
@@ -90,9 +88,7 @@
         </div>
       </div>
     </div>
-
-    <CustomFooter />
-  </div>
+  </PageTemplate>
 </template>
 
 <script lang="ts">

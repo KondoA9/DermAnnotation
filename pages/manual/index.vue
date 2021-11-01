@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <CustomHeader />
-
+  <PageTemplate>
     <div class="container-fluid py-5" style="min-height: 90vh">
       <div class="container py-4">
         <h2 id="basic-usage">{{ $t("manualPage.basicUsage.name") }}</h2>
@@ -43,9 +41,7 @@
         </div>
       </div>
     </div>
-
-    <CustomFooter />
-  </div>
+  </PageTemplate>
 </template>
 
 <script lang="ts">
