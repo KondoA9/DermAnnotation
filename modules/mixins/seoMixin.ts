@@ -1,10 +1,7 @@
 import { NuxtOptionsHead } from "@nuxt/types/config/head"
 import env from "@/env"
 
-export const seoMixin = (
-  pageName: string,
-  ignoreTitleTemplate: boolean = false
-) => {
+export const seoMixin = (pageName: string, ignoreTitleTemplate: boolean = false) => {
   return {
     head(): any {
       const self = this as any

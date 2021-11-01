@@ -20,9 +20,7 @@ const config: NuxtConfig = {
         content: "fnua7NL7VKa9hVOwlJ7hjNqNqTCN8bVIAsbgkjnDPm4",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}favicon.ico` },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}favicon.ico` }],
   },
 
   css: ["~/assets/global.scss"],
@@ -43,13 +41,7 @@ const config: NuxtConfig = {
 
   buildModules: ["@nuxt/typescript-build", "nuxt-compress"],
 
-  modules: [
-    "bootstrap-vue/nuxt",
-    "@nuxtjs/i18n",
-    "@nuxtjs/google-gtag",
-    "nuxt-compress",
-    "@nuxtjs/sitemap",
-  ],
+  modules: ["bootstrap-vue/nuxt", "@nuxtjs/i18n", "@nuxtjs/google-gtag", "nuxt-compress", "@nuxtjs/sitemap"],
 
   build: {
     babel: {

@@ -4,8 +4,7 @@ export default {
       summary: "A powerful annotation tool for semantic segmentation",
       advantages: [
         {
-          summary:
-            "DermAnnotation supports users by various function like followings, and make work more efficient.",
+          summary: "DermAnnotation supports users by various function like followings, and make work more efficient.",
           points: [
             "Save automatically",
             "Memory working folder",
@@ -19,24 +18,20 @@ export default {
             "DermAnnotation can load an image up to 16824px in height and width. We optimized application to be able to use such a large image, so you can work comfortably even if you need high resolution images.",
         },
         {
-          summary:
-            "Each pencil draw on a separate layer. You can annotate any object that overlaps with others.",
+          summary: "Each pencil draw on a separate layer. You can annotate any object that overlaps with others.",
         },
         {
-          summary:
-            "DermAnnotation supports virtual slides. You need not to convert to jpeg or png",
+          summary: "DermAnnotation supports virtual slides. You need not to convert to jpeg or png",
         },
       ],
     },
   },
   ja: {
     topPage: {
-      summary:
-        "セマンティック・セグメンテーション用の学習データ作成のためのアノテーションツール",
+      summary: "セマンティック・セグメンテーション用の学習データ作成のためのアノテーションツール",
       advantages: [
         {
-          summary:
-            "DermAnnotationは様々な形でユーザーをサポートし、効率的なアノテーションを可能にします。",
+          summary: "DermAnnotationは様々な形でユーザーをサポートし、効率的なアノテーションを可能にします。",
           points: [
             "自動保存",
             "作業フォルダを記憶",

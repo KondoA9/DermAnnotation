@@ -22,13 +22,11 @@
         />
         <div class="mx-auto">
           <nuxt-link :to="localePath('/download')">
-            <button class="btn btn-primary" style="font-size: 1.25rem">
-              Download
-            </button>
+            <button class="btn btn-primary" style="font-size: 1.25rem">Download</button>
           </nuxt-link>
           <p class="mt-3">
-            DermAnnotation currently available only for japanese. English
-            version and some documentations are under construction.
+            DermAnnotation currently available only for japanese. English version and some documentations are under
+            construction.
           </p>
         </div>
       </div>
@@ -87,9 +85,7 @@
           <div>
             <p>
               {{ $t("topPage.advantages[3].summary") }}
-              <nuxt-link :to="localePath('/manual/#vitrual-slide')"
-                >*</nuxt-link
-              >
+              <nuxt-link :to="localePath('/manual/#vitrual-slide')">*</nuxt-link>
             </p>
           </div>
         </div>

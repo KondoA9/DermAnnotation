@@ -17,11 +17,7 @@
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.tiffStructure.name") }}</h4>
           <div class="container">
-            <template
-              v-for="content in $t(
-                'devPage.annotatedFile.tiffStructure.contents'
-              )"
-            >
+            <template v-for="content in $t('devPage.annotatedFile.tiffStructure.contents')">
               <p>{{ content.sentence }}</p>
               <ul>
                 <li v-for="li in content.list">{{ li }}</li>
@@ -33,9 +29,7 @@
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.saveFormat.name") }}</h4>
           <div class="container">
-            <template
-              v-for="content in $t('devPage.annotatedFile.saveFormat.contents')"
-            >
+            <template v-for="content in $t('devPage.annotatedFile.saveFormat.contents')">
               <p>{{ content.sentence }}</p>
               <ul>
                 <li v-for="li in content.list">{{ li }}</li>

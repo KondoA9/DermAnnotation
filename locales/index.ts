@@ -7,11 +7,4 @@ import manualPage from "./manualPage"
 import devPage from "./devPage"
 import contactPage from "./contact"
 
-export default merge.all([
-  pages,
-  topPage,
-  downloadPage,
-  manualPage,
-  devPage,
-  contactPage,
-])
+export default merge.all([pages, topPage, downloadPage, manualPage, devPage, contactPage])

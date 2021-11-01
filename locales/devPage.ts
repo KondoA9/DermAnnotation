@@ -27,8 +27,7 @@ export default {
               ],
             },
             {
-              sentence:
-                "The pen name and color are saved as the name of each page in the following format.",
+              sentence: "The pen name and color are saved as the name of each page in the following format.",
               list: [
                 "The first page name is blank.",
                 "Save the second and subsequent page names in the format of 'pen name / (R, G, B, 255)'. The pen name is a character string that does not include '/', and RBG is an integer from 0 to 255.",
@@ -69,21 +68,18 @@ export default {
           name: "TIFFファイル構造",
           contents: [
             {
-              sentence:
-                "元画像、レイヤー及びレイヤーのペン情報は、TIFFファイルの各ページに以下の形式で保存されます。",
+              sentence: "元画像、レイヤー及びレイヤーのペン情報は、TIFFファイルの各ページに以下の形式で保存されます。",
               list: [],
             },
             {
-              sentence:
-                "1枚目は元画像、2枚目以降は各レイヤーになり、以下の形式で保存されます。",
+              sentence: "1枚目は元画像、2枚目以降は各レイヤーになり、以下の形式で保存されます。",
               list: [
                 "1枚目(元画像)は、元画像をそのまま保存する。",
                 "2枚目以降(レイヤー)は、各ピクセルを、塗られている部分にはペンと同じ色をアルファ値255で、塗られていない場合はアルファ値0として保存する。",
               ],
             },
             {
-              sentence:
-                "ペン名及び色は各ページの名前として以下の形式で保存されます。",
+              sentence: "ペン名及び色は各ページの名前として以下の形式で保存されます。",
               list: [
                 "1枚目のページ名は空白とする。",
                 "2枚目以降のページ名は「ペン名/(R, G, B, 255)」の形式で保存する。ペン名は「/」を含まない文字列、RBGは0 ~ 255の整数とする。",

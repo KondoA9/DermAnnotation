@@ -9,8 +9,7 @@ export default {
       submit: "送信",
       required: "（必須）",
       submitted: "送信を完了しました。",
-      description:
-        "個人情報及びお問い合わせ内容は、本お問い合わせに対する回答以外には用いません。",
+      description: "個人情報及びお問い合わせ内容は、本お問い合わせに対する回答以外には用いません。",
       confirmation: "お問い合わせ内容を確認し、送信ボタンを押下してください。",
       kind: ["バグ", "要望", "その他"],
     },
@@ -27,8 +26,7 @@ export default {
       submitted: "Submitted.",
       description:
         "Personal information and the content of the inquiry will not be used for anything other than the answer to this inquiry.",
-      confirmation:
-        "Please check the content of your inquiry and press the submit button.",
+      confirmation: "Please check the content of your inquiry and press the submit button.",
       kind: ["Bug", "Request", "Other"],
     },
   },

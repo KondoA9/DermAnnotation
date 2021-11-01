@@ -9,11 +9,7 @@
           <p>{{ $t("contact.description") }}</p>
         </div>
 
-        <iframe
-          @load="submitCompleted"
-          name="dummy"
-          style="width: 0px; height: 0px; border: 0px"
-        />
+        <iframe @load="submitCompleted" name="dummy" style="width: 0px; height: 0px; border: 0px" />
 
         <form
           id="contact-form"
@@ -23,12 +19,7 @@
         >
           <div class="form-group">
             <label>{{ required("contact.email") }}</label>
-            <input
-              type="email"
-              class="form-control"
-              required
-              name="emailAddress"
-            />
+            <input type="email" class="form-control" required name="emailAddress" />
           </div>
 
           <div class="form-group">
@@ -53,22 +44,13 @@
 
           <div class="form-group">
             <label>{{ required("contact.message") }}</label>
-            <textarea
-              class="form-control"
-              rows="6"
-              required
-              name="entry.626982020"
-            />
+            <textarea class="form-control" rows="6" required name="entry.626982020" />
           </div>
 
           <center>
             <div v-if="!showSubmittedMessage">
               <p class="mb-5">{{ $t("contact.confirmation") }}</p>
-              <button
-                v-if="!submitting"
-                type="submit"
-                class="btn btn-primary px-4"
-              >
+              <button v-if="!submitting" type="submit" class="btn btn-primary px-4">
                 {{ $t("contact.submit") }}
               </button>
               <div v-else class="spinner-border text-primary" role="status">
@@ -102,9 +84,7 @@ export default Vue.extend({
   },
   methods: {
     required(i18nCode: string): string {
-      return (
-        this.$t(i18nCode).toString() + this.$t("contact.required").toString()
-      )
+      return this.$t(i18nCode).toString() + this.$t("contact.required").toString()
     },
     submit() {
       this.submitting = true
