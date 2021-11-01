@@ -25,8 +25,7 @@
             <button class="btn btn-primary" style="font-size: 1.25rem">Download</button>
           </nuxt-link>
           <p class="mt-3">
-            DermAnnotation currently available only for japanese. English version and some documentations are under
-            construction.
+            DermAnnotation currently available only for japanese. English version is under construction.
           </p>
         </div>
       </div>
