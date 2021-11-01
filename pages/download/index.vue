@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
     <div class="container-fluid py-5 text-center bg-light my-auto" style="min-height: 90vh">
       <h2 class="display-5 pt-3">Download DermAnnotation v2.1.0</h2>
       <p class="my-3">{{ $t("downloadPage.date") }}</p>
@@ -42,7 +42,7 @@
       </div>
     </div>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

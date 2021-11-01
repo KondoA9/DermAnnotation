@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
 
     <div class="text-center py-4 mb-5" style="background: rgb(241, 226, 201)">
       <div class="container">
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

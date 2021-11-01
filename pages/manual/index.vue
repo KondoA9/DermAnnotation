@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
 
     <div class="container-fluid py-5" style="min-height: 90vh">
       <div class="container py-4">
         <h2 id="basic-usage">{{ $t("manualPage.basicUsage.name") }}</h2>
         <div class="container">
-          <p v-for="p in $t('manualPage.basicUsage.contents')">
+          <p v-for="p in $t('manualPage.basicUsage.contents')" :key="p">
             {{ p }}
           </p>
         </div>
@@ -18,7 +18,7 @@
         </h2>
         <div class="container">
           <ul>
-            <li v-for="li in $t('manualPage.availableImage.contents')">
+            <li v-for="li in $t('manualPage.availableImage.contents')" :key="li">
               {{ li }}
             </li>
           </ul>
@@ -28,7 +28,7 @@
       <div class="container py-4">
         <h2 id="pencil-setting">{{ $t("manualPage.pencilSettings.name") }}</h2>
         <div class="container">
-          <p v-for="p in $t('manualPage.pencilSettings.contents')">
+          <p v-for="p in $t('manualPage.pencilSettings.contents')" :key="p">
             {{ p }}
           </p>
         </div>
@@ -37,14 +37,14 @@
       <div class="container py-4">
         <h2 id="virtual-slide">病理画像</h2>
         <div class="container">
-          <p v-for="p in $t('manualPage.virtualSlide.contents')">
+          <p v-for="p in $t('manualPage.virtualSlide.contents')" :key="p">
             {{ p }}
           </p>
         </div>
       </div>
     </div>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

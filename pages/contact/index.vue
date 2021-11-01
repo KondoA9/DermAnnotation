@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
 
     <div class="container-fluid py-5">
       <div class="container my-4">
@@ -9,7 +9,7 @@
           <p>{{ $t("contact.description") }}</p>
         </div>
 
-        <iframe @load="submitCompleted" name="dummy" style="width: 0px; height: 0px; border: 0px" />
+        <iframe name="dummy" style="width: 0px; height: 0px; border: 0px" @load="submitCompleted" />
 
         <form
           id="contact-form"
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

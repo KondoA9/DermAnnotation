@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
 
     <div class="container-fluid py-5" style="min-height: 90vh">
       <div class="container col-lg-6">
@@ -8,7 +8,7 @@
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.overview.name") }}</h4>
           <div class="container">
-            <p v-for="p in $t('devPage.annotatedFile.overview.contents')">
+            <p v-for="p in $t('devPage.annotatedFile.overview.contents')" :key="p">
               {{ p }}
             </p>
           </div>
@@ -17,30 +17,30 @@
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.tiffStructure.name") }}</h4>
           <div class="container">
-            <template v-for="content in $t('devPage.annotatedFile.tiffStructure.contents')">
+            <div v-for="content in $t('devPage.annotatedFile.tiffStructure.contents')" :key="content">
               <p>{{ content.sentence }}</p>
               <ul>
-                <li v-for="li in content.list">{{ li }}</li>
+                <li v-for="li in content.list" :key="li">{{ li }}</li>
               </ul>
-            </template>
+            </div>
           </div>
         </div>
 
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.saveFormat.name") }}</h4>
           <div class="container">
-            <template v-for="content in $t('devPage.annotatedFile.saveFormat.contents')">
+            <div v-for="content in $t('devPage.annotatedFile.saveFormat.contents')" :key="content">
               <p>{{ content.sentence }}</p>
               <ul>
-                <li v-for="li in content.list">{{ li }}</li>
+                <li v-for="li in content.list" :key="li">{{ li }}</li>
               </ul>
-            </template>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 
