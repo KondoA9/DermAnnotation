@@ -15,6 +15,10 @@ const config: NuxtConfig = {
         content: "width=device-width, initial-scale=1, shrink-to-fit=no",
       },
       { name: "format-detection", content: "telephone=no" },
+      {
+        name: "google-site-verification",
+        content: "fnua7NL7VKa9hVOwlJ7hjNqNqTCN8bVIAsbgkjnDPm4",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}favicon.ico` },
