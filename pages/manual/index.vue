@@ -33,7 +33,7 @@
       </div>
 
       <div class="container py-4">
-        <h2 id="virtual-slide">病理画像</h2>
+        <h2 id="virtual-slide">{{ $t("manualPage.virtualSlide.name") }}</h2>
         <div class="container">
           <p v-for="p in $t('manualPage.virtualSlide.contents')" :key="p">
             {{ p }}
