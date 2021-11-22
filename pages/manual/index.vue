@@ -16,8 +16,8 @@
         </h2>
         <div class="container">
           <ul>
-            <li v-for="li in $t('manualPage.availableImage.contents')" :key="li">
-              {{ li }}
+            <li v-for="(li, index) in $t('manualPage.availableImage.contents')" :key="li">
+              {{ li }} <nuxt-link v-if="index === 2" :to="localePath('/dev')">*</nuxt-link>
             </li>
           </ul>
         </div>

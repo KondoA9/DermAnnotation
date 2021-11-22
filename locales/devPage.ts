@@ -39,13 +39,14 @@ export default {
           name: "Save format",
           contents: [
             {
-              sentence:
-                "In order to read / write TIFF files that can be used with DermAnnotation normally, it is necessary to create / read TIFF files according to the following restrictions.",
+              sentence: "DermAnnotation creates and reads annotation files in the following format.",
               list: [
-                "The height and width of all pages are the same",
-                "Images are saved by the scanline method",
-                "Use the LZW method as the compression method",
-                "The number of samples per pixel is 4, and 4 RGBA are stored.",
+                "The height and width of all pages are the same, and all pages should be 16384px or less.",
+                "Images are saved by the scanline method.",
+                "The LZW method is used as the compression method.",
+                "Planar Configuration uses the CONTIG method.",
+                "Bits per sample is 8.",
+                "Samples per pixel is set to 4, and RGBA is stored.",
               ],
             },
           ],
@@ -91,13 +92,14 @@ export default {
           name: "保存形式",
           contents: [
             {
-              sentence:
-                "DermAnnotationで使用可能なTIFFファイルを正常に読み込み・書き込みをするためには以下の制約に従ってTIFFファイルを作成・読み込みする必要があります。",
+              sentence: "DermAnnotationは以下の形式でアノテーションファイルを作成・読み込みしています。",
               list: [
-                "全てのページの高さ・幅が同じである",
-                "画像の保存はスキャンライン法により行う",
-                "圧縮方法はLZW方式を用いる",
-                "1ピクセルあたりのサンプル数は4とし、RGBAの4つを格納する。",
+                "全てのページの高さ・幅が同じで、いずれも16384px以下とする。",
+                "画像の保存はスキャンライン法により行う。",
+                "圧縮方法はLZW方式を用いる。",
+                "PlanarConfigurationはCONTIG方式とする。",
+                "Bits per sampleは8とする。",
+                "Samples per pixelは4とし、RGBAを格納する。",
               ],
             },
           ],

@@ -11,10 +11,10 @@ export default {
       availableImage: {
         name: "Available image formats",
         contents: [
-          "Common images such as jpg, png, bmp, gif",
+          "Images in jpg, png, bmp, gif",
           "Virtual slide images in ndpi, vms, vmu, svs, scn format",
-          "Image annotated with DermAnnotation",
-          "TIFF file according to the file format for DermAnnotation",
+          "Images annotated with DermAnnotation, or files created according to the save format",
+          "TIFF file that can be read by DermAnnotation (Recommended to convert to png etc. and read. If you have a request, we will expand the correspondence as needed.)",
           "Images of 16384px or less in each of the vertical and horizontal directions",
         ],
       },
@@ -49,11 +49,11 @@ export default {
       availableImage: {
         name: "使用可能な画像形式",
         contents: [
-          "jpg, png, bmp, gif 等の一般的な画像",
+          "jpg, png, bmp, gif 形式の画像",
           "ndpi, vms, vmu, svs, scn 形式の病理画像",
-          "DermAnnotationでアノテーション済みの画像",
-          "DermAnnotation用ファイル形式に沿ったTIFFファイル",
-          "縦横それぞれ16384px以下の画像（macOSの場合は8192px）",
+          "DermAnnotationでアノテーション済みの画像、または保存形式に則って作成されたファイル",
+          "DermAnnotationで読み込み可能なTIFFファイル（png等に変換しての読み込みを推奨。要望を頂ければ随時対応を拡大します。）",
+          "縦横それぞれ16384px以下の画像",
         ],
       },
       pencilSettings: {
