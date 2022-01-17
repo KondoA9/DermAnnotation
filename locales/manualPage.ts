@@ -4,7 +4,7 @@ export default {
       basicUsage: {
         name: "Basic usage",
         contents: [
-          "After launching the app, select the folder containing the image from 'New'.",
+          "After launching the app, start work from 'Open Folder' or 'Open Image'.",
           "The opened folder is saved as a 'Recently opened folder' so that you can start working immediately next time.",
         ],
       },
@@ -42,7 +42,7 @@ export default {
       basicUsage: {
         name: "基本的な使い方",
         contents: [
-          "アプリ起動後、「新規」から画像の入ったフォルダを選択します。",
+          "アプリ起動後、「フォルダを開く」または「画像を開く」から作業を開始します。",
           "開いたフォルダは「最近開いたフォルダ」として保存され、次回以降すぐに作業に取り掛かることができます。",
         ],
       },

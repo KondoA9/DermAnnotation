@@ -1,7 +1,7 @@
 <template>
   <PageTemplate>
     <div class="container-fluid py-5 text-center bg-light my-auto" style="min-height: 90vh">
-      <h2 class="display-5 pt-3">Download DermAnnotation v2.1.1</h2>
+      <h2 class="display-5 pt-3">Download DermAnnotation v2.2.0</h2>
       <p class="my-3">{{ $t("downloadPage.date") }}</p>
       <div class="container" style="display: table">
         <div class="align-middle" style="display: table-cell">
@@ -13,6 +13,10 @@
             <button class="btn btn-primary py-3 px-5 m-3" @click="download('macOS')">
               <p class="lead m-0">macOS</p>
               <p class="m-0">Mojave 10.14+</p>
+            </button>
+            <button class="btn btn-primary py-3 px-5 m-3" disabled>
+              <p class="lead m-0">[WIP] Linux</p>
+              <p class="m-0">Ubuntu 20.04 LTS</p>
             </button>
           </div>
 
