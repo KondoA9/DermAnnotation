@@ -14,6 +14,8 @@ export default {
         "Other few fixes",
       ],
       bugs: [
+        "The layout of the editor is broken when the operation panel is placed on the left side",
+        "Pen settings are not saved properly",
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -34,6 +36,8 @@ export default {
         "その他軽微な修正等",
       ],
       bugs: [
+        "操作パネルを左側に配置した際にエディタのレイアウトが崩れる",
+        "ペン設定の保存が正常に行われない",
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
       ],
