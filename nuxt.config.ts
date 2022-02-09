@@ -20,7 +20,7 @@ const config: NuxtConfig = {
         content: "fnua7NL7VKa9hVOwlJ7hjNqNqTCN8bVIAsbgkjnDPm4",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}favicon.ico` }],
+    link: [{ rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}/favicon.ico` }],
   },
 
   css: ["~/assets/global.scss"],
@@ -28,7 +28,7 @@ const config: NuxtConfig = {
   plugins: [],
 
   router: {
-    base: env.ROOT_URL,
+    base: `${env.ROOT_URL}/`,
     trailingSlash: true,
   },
 

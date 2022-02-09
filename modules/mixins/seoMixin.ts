@@ -1,29 +1,26 @@
+import Vue from "vue"
+import { MetaInfo } from "vue-meta"
 import { NuxtOptionsHead } from "@nuxt/types/config/head"
-import env from "@/env"
 
 export const seoMixin = (pageName: string, ignoreTitleTemplate: boolean = false) => {
   return {
-    head(): any {
-      const self = this as any
+    head(): MetaInfo {
+      const self = this as unknown as Vue
+
+      const i18nHead = self.$nuxtI18nHead({ addSeoAttributes: true })
 
       const head: NuxtOptionsHead = {
-        htmlAttrs: {
-          lang: self.$i18n.locale,
-        },
-        title: self.$t(`pages.${pageName}.title`) as string,
+        htmlAttrs: { ...i18nHead.htmlAttrs },
         meta: [
           {
             hid: "description",
             name: "description",
             content: self.$t(`pages.${pageName}.description`) as string,
           },
+          ...i18nHead.meta,
         ],
-        link: [
-          {
-            rel: "canonical",
-            href: `${env.BASE_URL}${self.$route.path.slice(1)}`,
-          },
-        ],
+        link: [...i18nHead.link],
+        title: self.$t(`pages.${pageName}.title`) as string,
       }
 
       if (ignoreTitleTemplate) {
