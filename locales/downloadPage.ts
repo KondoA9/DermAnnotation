@@ -16,6 +16,7 @@ export default {
         "Added Windows standalone version",
       ],
       bugs: [
+        "The default save destination setting is not working",
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -38,6 +39,7 @@ export default {
         "Windowsスタンドアローン版を追加",
       ],
       bugs: [
+        "規定の保存先の設定が機能していない",
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
       ],
