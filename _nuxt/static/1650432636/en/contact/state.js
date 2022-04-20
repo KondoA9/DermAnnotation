@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FDermAnnotation\u002F_nuxt\u002Fstatic\u002F1650432636",layout:"default",error:a,serverRendered:true,routePath:"\u002Fen\u002Fcontact\u002F",config:{_app:{basePath:"\u002FDermAnnotation\u002F",assetsPath:"\u002FDermAnnotation\u002F_nuxt\u002F",cdnURL:a}}}}(null));
