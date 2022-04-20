@@ -31,7 +31,7 @@
                 </div>
               </div>
             </b-tab>
-            <b-tab title="[WIP] Linux">
+            <b-tab title="Linux">
               <div>
                 <p class="lead mb-2">Ubuntu 20.04 LTS</p>
                 <p>{{ $t("downloadPage.noteForLinux") }}</p>
