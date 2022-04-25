@@ -18,6 +18,7 @@ export default {
       ],
       bugs: [
         "On the pen editing screen, some pens become inoperable when there are many pens.",
+        '"Default save destination" setting may not work properly',
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -42,6 +43,7 @@ export default {
       ],
       bugs: [
         "ペン編集画面において、ペンが多数ある場合に一部のペンが操作不可能な状態になる",
+        "「規定の保存先」設定が正常に働かない場合がある",
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
       ],
