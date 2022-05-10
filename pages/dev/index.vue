@@ -2,6 +2,17 @@
   <PageTemplate>
     <div class="container-fluid py-5" style="min-height: 90vh">
       <div class="container col-lg-6">
+        <h2>{{ $t("devPage.pythonPackage.name") }}</h2>
+        <div class="container py-3">
+          <p>
+            {{ $t("devPage.pythonPackage.sentences")[0] }}
+            <a href="https://pypi.org/project/DermTiff/">DermTiff</a>
+            {{ $t("devPage.pythonPackage.sentences")[1] }}
+          </p>
+        </div>
+      </div>
+
+      <div class="container col-lg-6 mt-4">
         <h2>{{ $t("devPage.annotatedFile.name") }}</h2>
         <div class="container py-3">
           <h4>{{ $t("devPage.annotatedFile.overview.name") }}</h4>

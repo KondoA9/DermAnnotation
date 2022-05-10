@@ -1,6 +1,10 @@
 export default {
   en: {
     devPage: {
+      pythonPackage: {
+        name: "Use DermAnnotation TIFF files in Python",
+        sentences: ["Use ", " to read / write DermAnnotation TIFF files in Python."],
+      },
       annotatedFile: {
         name: "Annotated file",
         overview: {
@@ -56,6 +60,10 @@ export default {
   },
   ja: {
     devPage: {
+      pythonPackage: {
+        name: "PythonでDermAnnotation用TIFFファイルを扱う",
+        sentences: ["PythonでDermAnnotation用TIFFファイルを読み書きする場合は", "パッケージをご利用ください。"],
+      },
       annotatedFile: {
         name: "アノテーション済みファイル",
         overview: {
