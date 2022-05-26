@@ -12,6 +12,7 @@ export default {
         "Fixed a memory leak issue",
       ],
       bugs: [
+        "In this version, the settings of the previous version and the history of recently opened folders are deleted",
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -25,7 +26,11 @@ export default {
       noteForLinux: "Linux版をご希望の場合はお問い合わせください。",
       releaseLabel: "最新バージョンの変更点",
       bugLabel: "既知の不具合",
-      releases: ["出力フォルダを入力に対する相対パスで指定できる機能を追加", "メモリリークの問題を修正"],
+      releases: [
+        "このバージョンでは、以前のバージョンの設定・最近開いたフォルダの履歴が削除されます",
+        "出力フォルダを入力に対する相対パスで指定できる機能を追加",
+        "メモリリークの問題を修正",
+      ],
       bugs: [
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
