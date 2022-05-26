@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/manual", {data:[{}],fetch:{},mutations:void 0});
