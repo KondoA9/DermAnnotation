@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-gtag": "^1.0.4",
-    "@nuxtjs/i18n": "^7.2.1",
+    "@nuxtjs/i18n": "^7.2.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.22.0",
@@ -20,7 +20,7 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.2",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^9.0.0",
