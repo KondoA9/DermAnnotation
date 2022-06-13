@@ -23,7 +23,7 @@
             </b-tab>
             <b-tab title="macOS">
               <div>
-                <p class="lead mb-2">macOS Mojave 10.14+</p>
+                <p class="lead mb-2">macOS Big Sur 11.0+</p>
                 <div class="d-flex justify-content-center flex-wrap">
                   <button class="btn btn-outline-primary px-5 py-2 m-3" @click="download('macOS')">
                     <p>Standalone (.zip)</p>
