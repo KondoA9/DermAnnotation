@@ -12,7 +12,7 @@ on:
       - develop
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
