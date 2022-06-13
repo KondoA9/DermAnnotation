@@ -1,10 +1,7 @@
-name: Generate and Deploy
+name: Deploy
+
 on:
   push:
-    branches:
-      - main
-
-  pull_request:
     branches:
       - main
 
@@ -34,7 +31,6 @@ jobs:
           retention-days: 1
 
   deploy:
-    if: ${{ github.event_name == 'push' }}
     needs: generate
     runs-on: ubuntu-latest
     steps:
@@ -53,5 +49,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages 
-          FOLDER: dist 
+          BRANCH: gh-pages
+          FOLDER: dist
