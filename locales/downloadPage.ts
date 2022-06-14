@@ -8,11 +8,12 @@ export default {
       releaseLabel: "Changes in the latest version",
       bugLabel: "Known bugs",
       releases: [
+        "In this version, the settings of the previous version and the history of recently opened folders are deleted",
         "Added the function that the output folder can be specified by the relative path to the input.",
         "Fixed a memory leak issue",
       ],
       bugs: [
-        "In this version, the settings of the previous version and the history of recently opened folders are deleted",
+        "Crashes when reading a folder or file that app does not have access to",
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -32,6 +33,7 @@ export default {
         "メモリリークの問題を修正",
       ],
       bugs: [
+        "アクセス権限のないフォルダやファイル読み込み時にアプリケーションが強制終了する",
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
       ],
