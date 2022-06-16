@@ -13,6 +13,7 @@ export default {
         "Fixed a memory leak issue",
       ],
       bugs: [
+        "The settings of an open folder may be inherited when you open another folder",
         "Crashes when reading a folder or file that app does not have access to",
         "Notifications may be interrupted and invisible",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
@@ -33,6 +34,7 @@ export default {
         "メモリリークの問題を修正",
       ],
       bugs: [
+        "開いているフォルダの設定が別のフォルダを開いた際に引き継がれてしまう場合がある",
         "アクセス権限のないフォルダやファイル読み込み時にアプリケーションが強制終了する",
         "通知が途中で途切れて見えない場合がある",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
