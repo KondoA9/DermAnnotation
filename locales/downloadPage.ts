@@ -13,6 +13,7 @@ export default {
         "Fixed a memory leak issue",
       ],
       bugs: [
+        "Operation may not be possible when switching images, or the application may be forcibly terminated",
         "The settings of an open folder may be inherited when you open another folder",
         "Crashes when reading a folder or file that app does not have access to",
         "Notifications may be interrupted and invisible",
@@ -34,6 +35,7 @@ export default {
         "メモリリークの問題を修正",
       ],
       bugs: [
+        "画像切り替え時に操作不可能、またはアプリが強制終了する場合がある",
         "開いているフォルダの設定が別のフォルダを開いた際に引き継がれてしまう場合がある",
         "アクセス権限のないフォルダやファイル読み込み時にアプリケーションが強制終了する",
         "通知が途中で途切れて見えない場合がある",
