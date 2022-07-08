@@ -1,7 +1,7 @@
 <template>
   <PageTemplate>
     <div class="container-fluid py-5 text-center bg-light my-auto" style="min-height: 90vh">
-      <h2 class="display-5 pt-3">Download DermAnnotation v2.3.0</h2>
+      <h2 class="display-5 pt-3">Download DermAnnotation v2.3.1</h2>
       <p class="my-3">{{ $t("downloadPage.date") }}</p>
 
       <div class="container mt-4">
@@ -33,7 +33,7 @@
             </b-tab>
             <b-tab title="Linux">
               <div>
-                <p class="lead mb-2">Ubuntu 20.04 LTS</p>
+                <p class="lead mb-2">Ubuntu 20.04 / 22.04 LTS</p>
                 <p>{{ $t("downloadPage.noteForLinux") }}</p>
                 <!--<div class="d-flex justify-content-center flex-wrap">
                   <button class="btn btn-outline-primary px-5 py-2 m-3" @click="download('linux')">
