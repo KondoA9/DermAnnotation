@@ -19,6 +19,8 @@ export default {
         "[Bug fix] Fixed an issue where expired log files were not deleted",
       ],
       bugs: [
+        "Sometimes the fold cannot be opened even though there is an image",
+        "Some areas cannot be painted when the image is rotated",
         "Layer color does not change when changing pen color",
         "Increasing the window size on macOS makes the operation extremely heavy (reducing the window size improves the operation)",
       ],
@@ -44,6 +46,8 @@ export default {
         "[Bug fix] 期限切れのログファイルが削除されていなかった問題を修正",
       ],
       bugs: [
+        "画像があるにも関わらずフォルが開けない場合がある",
+        "画像回転時に塗ることができない領域がある",
         "ペン色変更時にレイヤの色が変更されない",
         "macOSでウィンドウサイズを大きくすると動作が極端に重くなる (ウィンドウサイズを小さくすることで改善されます)",
       ],
