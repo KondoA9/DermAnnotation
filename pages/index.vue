@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <div class="container-fluid py-4 bg-white">
+    <div class="container-fluid py-4 bg-white mb-5">
       <div class="container">
         <h3>Virtual slide</h3>
         <div class="row">
