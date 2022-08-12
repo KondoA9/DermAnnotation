@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-gtag": "^1.0.4",
-    "@nuxtjs/i18n": "^7.2.2",
+    "@nuxtjs/i18n": "^7.2.3",
     "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.22.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-vue": "^9.3.0",
     "nuxt-compress": "^5.0.0",
     "prettier": "^2.7.1",
-    "sass": "^1.54.0",
+    "sass": "^1.54.3",
     "sass-loader": "^10.3.1"
   }
 }
