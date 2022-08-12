@@ -17,7 +17,10 @@ export default {
         "[Performance] Reduces memory consumption and CPU load of the entire application",
         "[Other] Other minor operation improvements",
       ],
-      bugs: ["The application crashes when the slider in the edit panel is operated when image loading fails"],
+      bugs: [
+        "The application crashes when the slider in the edit panel is operated when image loading fails",
+        "Operation may become unstable when painting is interrupted by going out of the image range",
+      ],
     },
   },
   ja: {
@@ -38,7 +41,10 @@ export default {
         "[Performance] アプリケーション全体のメモリ消費、CPU負荷を低減",
         "[Other] その他軽微な動作改善",
       ],
-      bugs: ["画像読み込み失敗時に編集パネルのスライダーを操作するとアプリケーションが強制終了する"],
+      bugs: [
+        "画像読み込み失敗時に編集パネルのスライダーを操作するとアプリケーションが強制終了する",
+        "ペイント中に画像範囲外に出て中断された際に動作が不安定になる場合がある",
+      ],
     },
   },
 }
