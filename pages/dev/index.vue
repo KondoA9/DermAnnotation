@@ -8,6 +8,10 @@
             {{ $t("devPage.pythonPackage.sentences")[0] }}
             <a href="https://pypi.org/project/DermTiff/">DermTiff</a>
             {{ $t("devPage.pythonPackage.sentences")[1] }}
+            <br />
+            {{ $t("devPage.pythonPackage.sentences")[2] }}
+            <a href="https://github.com/athnomedical/libdermtiff/tree/main">libdermtiff</a>
+            {{ $t("devPage.pythonPackage.sentences")[3] }}
           </p>
         </div>
       </div>
