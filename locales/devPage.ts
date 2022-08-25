@@ -3,7 +3,12 @@ export default {
     devPage: {
       pythonPackage: {
         name: "Use DermAnnotation TIFF files in Python",
-        sentences: ["Use ", " to read / write DermAnnotation TIFF files in Python."],
+        sentences: [
+          "Use ",
+          " to read / write DermAnnotation TIFF files in Python.",
+          "Or C++ library",
+          "is also available.",
+        ],
       },
       annotatedFile: {
         name: "Annotated file",
@@ -47,7 +52,7 @@ export default {
               list: [
                 "The height and width of all pages are the same, and all pages should be 16384px or less.",
                 "Images are saved by the scanline method.",
-                "The LZW method is used as the compression method.",
+                "The ADOBE_DEFLATE method is used as the compression method.",
                 "Planar Configuration uses the CONTIG method.",
                 "Bits per sample is 8.",
                 "Samples per pixel is set to 4, and RGBA is stored.",
@@ -62,7 +67,12 @@ export default {
     devPage: {
       pythonPackage: {
         name: "PythonでDermAnnotation用TIFFファイルを扱う",
-        sentences: ["PythonでDermAnnotation用TIFFファイルを読み書きする場合は", "パッケージをご利用ください。"],
+        sentences: [
+          "PythonでDermAnnotation用TIFFファイルを読み書きする場合は",
+          "パッケージをご利用ください。",
+          "またはC++ライブラリ",
+          "も利用できます。",
+        ],
       },
       annotatedFile: {
         name: "アノテーション済みファイル",
@@ -104,7 +114,7 @@ export default {
               list: [
                 "全てのページの高さ・幅が同じで、いずれも16384px以下とする。",
                 "画像の保存はスキャンライン法により行う。",
-                "圧縮方法はLZW方式を用いる。",
+                "圧縮方法はADOBE_DEFLATE方式を用いる。",
                 "PlanarConfigurationはCONTIG方式とする。",
                 "Bits per sampleは8とする。",
                 "Samples per pixelは4とし、RGBAを格納する。",
