@@ -16,11 +16,11 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.22.0",
-    "core-js": "^3.24.1",
+    "core-js": "^3.25.3",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.9",
+    "@babel/eslint-parser": "^7.19.1",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
