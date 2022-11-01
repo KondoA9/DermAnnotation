@@ -16,7 +16,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.22.0",
-    "core-js": "^3.25.3",
+    "core-js": "^3.26.0",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
