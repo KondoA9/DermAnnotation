@@ -31,7 +31,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.7.0",
     "nuxt-compress": "^5.0.0",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "sass": "^1.56.1",
     "sass-loader": "^10.3.1"
   }
