@@ -4,7 +4,7 @@
       <b-navbar-brand :to="localePath('/')"
         ><img
           class="align-middle"
-          :src="`${$router.options.base}favicon.ico`"
+          :src="`${$router.options.base}icon.png`"
           alt="DermAnnotation"
           width="32"
           height="32"
