@@ -29,7 +29,7 @@ const config: NuxtConfig = {
         content:
           "Derm Annotation is an image annotation tool for semantic segmentation. Various support functions enable efficient annotation work.",
       },
-      { hid: "og:image", property: "og:image", content: `${env.ROOT_URL}/ogp_image.png` },
+      { hid: "og:image", property: "og:image", content: `${env.ROOT_URL}/obp_image.png` },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: `${env.ROOT_URL}/favicon.ico` }],
   },
