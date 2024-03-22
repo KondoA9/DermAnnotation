@@ -54,17 +54,6 @@ const devPage: Page = {
   },
 }
 
-const contactPage: Page = {
-  en: {
-    title: "Contact",
-    description: "Contact us about DermAnnotation",
-  },
-  ja: {
-    title: "お問い合わせ",
-    description: "DermAnnotationについて問い合わせる",
-  },
-}
-
 export default {
   en: {
     pages: {
@@ -72,7 +61,6 @@ export default {
       download: downloadPage.en,
       manual: manualPage.en,
       dev: devPage.en,
-      contact: contactPage.en,
     },
   },
   ja: {
@@ -81,7 +69,6 @@ export default {
       download: downloadPage.ja,
       manual: manualPage.ja,
       dev: devPage.ja,
-      contact: contactPage.ja,
     },
   },
 }

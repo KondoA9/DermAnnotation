@@ -17,7 +17,6 @@
           <b-nav-item :to="localePath('/download')">{{ $t("pages.download.title") }}</b-nav-item>
           <b-nav-item :to="localePath('/manual')">{{ $t("pages.manual.title") }}</b-nav-item>
           <b-nav-item :to="localePath('/dev')">{{ $t("pages.dev.title") }}</b-nav-item>
-          <b-nav-item :to="localePath('/contact')">{{ $t("pages.contact.title") }}</b-nav-item>
 
           <b-nav-item-dropdown text="Language">
             <b-dropdown-item :to="switchLocalePath('ja')"> 日本語 </b-dropdown-item>
