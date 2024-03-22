@@ -31,17 +31,6 @@
                 </div>
               </div>
             </b-tab>
-            <b-tab title="Linux">
-              <div>
-                <p class="lead mb-2">Ubuntu 20.04 / 22.04 LTS</p>
-                <p>{{ $t("downloadPage.noteForLinux") }}</p>
-                <!--<div class="d-flex justify-content-center flex-wrap">
-                  <button class="btn btn-outline-primary px-5 py-2 m-3" @click="download('linux')">
-                    <p>Installer</p>
-                  </button>
-                </div>-->
-              </div>
-            </b-tab>
           </b-tabs>
         </b-card>
 
